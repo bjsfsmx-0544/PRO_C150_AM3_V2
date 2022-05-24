@@ -10,7 +10,7 @@
 
     <a-camera wasd-controls-enabled="false" position="0 8 20"></a-camera>
 
-    <!-------------------------------------------Asset Management------------------------------------------->
+    <!------------------------------------------- Administración de recursos ------------------------------------------->
     <a-assets>      
 
       <a-asset-item id="table-obj" src="./models/obj/CoffeeTableModel/tinker.obj"></a-asset-item>
@@ -24,32 +24,32 @@
     </a-assets>
     
     
-    <!-------------------------------------Circular Plane----------------------------------------------->
+    <!------------------------------------- Plano circular ----------------------------------------------->
     
     <a-circle id="floor" position="-0.4 -0.76 -25" rotation="-90 0 0" radius="100" shadow="receive: true" visible="true"
       color="white">
     </a-circle>
     
   
-    <!-------------------------------------Room Walls----------------------------------------------->
+    <!------------------------------------- Muros de la habitación ----------------------------------------------->
     <a-entity >
 
-      <!--BACK-->
+      <!-- Posterior -->
       <a-box color="blue" position="0.076 -4 -39" width="50" height="50">
       </a-box>
-      <!--RIGHT-->
+      <!-- Derecho -->
       <a-box color="orange" rotation="0 -90 0" position="25.5 -2.9 -15" width="50" height="50">
       </a-box>
-      <!--LEFT-->
+      <!-- Izquierdo -->
       <a-box color="orange" rotation="0 -90 0" position="-25.9 -3.4 -15" width="50" height="50">
       </a-box>
-      <!--TOP-->
+      <!-- Superior -->
       <a-box color="white" rotation="90 0 0" position="0 21.4 -15" width="50" height="50">
       </a-box>
 
     </a-entity>
     
-    <!--------------------------------------OBJ Models----------------------------------------------------------->   
+    <!-------------------------------------- Modelos OBJ ----------------------------------------------------------->   
   
     <a-entity obj-model="obj: #table-obj; mtl: #table-mtl"  position="5 0 0" rotation="-90 -40 0" scale="0.1 0.1 0.1 "
     ></a-entity>
